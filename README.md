@@ -31,3 +31,10 @@ This repository contains the frontend implementation of an **AI Interview Platfo
 - Enhanced **UI/UX** using animations, polished layouts, and responsive design.  
 - Integrated smooth transitions and dynamic effects for a professional feel.  
 - Modular and reusable components for better scalability and maintainability.  
+
+## Interface of Website 
+
+![Screenshot From 2024-12-06 02-58-26](https://github.com/user-attachments/assets/be17632c-12c8-4cb4-a1df-8394d8cb2de1)
+![Screenshot From 2024-12-06 02-59-23](https://github.com/user-attachments/assets/380d6f4f-b650-4982-b7fd-9a09d9c7e8b9)
+
+![Screenshot From 2024-12-06 02-59-50](https://github.com/user-attachments/assets/c8cb5011-4b33-4bb4-8d65-3c763457c216)
