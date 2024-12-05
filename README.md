@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Interview Platform Frontend  
 
-## Getting Started
+This repository contains the frontend implementation of an **AI Interview Platform**, developed as part of the Frontend Intern Hiring Task. The project is built with **Next.js**, **Shadcn UI**, and **TailwindCSS**. It replicates the functionality and flow of the provided reference platform, including the instruction screen, permission checks, question and recording screens, and more.  
 
-First, run the development server:
+## Features  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Instruction Screen  
+- Displays test instructions to the user before beginning the interview.  
+- Clean and minimal UI design.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Check Permission Screen  
+- Prompts the user to grant necessary permissions for:  
+  - Accessing their **camera** and **microphone** using `navigator.mediaDevices.getUserMedia()`.  
+  - **Screen sharing** using `navigator.mediaDevices.getDisplayMedia()`.  
+- Handles permission errors gracefully.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Question Screen  
+- Displays questions one at a time, with the option to play the question's audio.  
+- Uses `SpeechSynthesis` API for question playback.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Answer Recording Screen  
+- Captures audio and video using the browser's Media APIs.  
+- Displays a recording timer and a live video preview inside a styled frame.  
+- Sends recorded chunks to the API for further processing.  
 
-## Learn More
+### Loader Screen & Test Completion Screen  
+- Displays a loader during data processing.  
+- Notifies the user upon successful completion of the test.  
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Bonus Improvements  
+- Enhanced **UI/UX** using animations, polished layouts, and responsive design.  
+- Integrated smooth transitions and dynamic effects for a professional feel.  
+- Modular and reusable components for better scalability and maintainability.  
