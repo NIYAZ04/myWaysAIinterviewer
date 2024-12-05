@@ -96,25 +96,25 @@ export default function InterviewPage() {
 
   useEffect(() => {
     if (utteranceRef.current) window.speechSynthesis.cancel();
-
+  
     utteranceRef.current = new SpeechSynthesisUtterance(
       questions[activeQuestionIndex]?.question
     );
     utteranceRef.current.rate = 0.85;
     utteranceRef.current.pitch = 1.1;
-
+  
     utteranceRef.current.onend = () => {
       setCameraVisible(true);
       startMediaRecording();
     };
-
+  
     window.speechSynthesis.speak(utteranceRef.current);
-
+  
     return () => {
       window.speechSynthesis.cancel();
       mediaStreamRef.current?.getTracks().forEach((track) => track.stop());
     };
-  }, [activeQuestionIndex]);
+  }, [activeQuestionIndex, startMediaRecording]);  
 
   useEffect(() => {
     if (!isCapturing || recordTimer <= 0) return;

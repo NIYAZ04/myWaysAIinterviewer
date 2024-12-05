@@ -41,7 +41,7 @@ const InterviewInstructions = () => {
         Interview Instructions <span className="text-red-500">!!</span>
       </div>
       <div className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8 text-center max-w-2xl">
-        You're in a proctored test environment. If caught in any suspicious behavior, you will be marked{" "}
+        You re in a proctored test environment. If caught in any suspicious behavior, you will be marked{" "}
         <span className="text-red-500">FAIL</span>.
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-[1200px] justify-items-center">
